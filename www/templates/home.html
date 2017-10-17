@@ -1,0 +1,64 @@
+<ion-side-menus enable-menu-with-back-views="true">
+	
+	<ion-side-menu-content>
+		<ion-nav-view>
+		<!--	
+			<ion-nav-bar class="bar-clear">
+				<ion-nav-buttons side="right">
+					<button menu-toggle="right" class="button button-icon button-clear ion-navicon"></button>
+				</ion-nav-buttons>			
+			</ion-nav-bar>
+		-->	
+			
+			
+			<div class="bar bar-header" style="background:none; font-weight:bold">
+				<div class="col col-33"></div>
+				<div class="col col-33"></div>
+				<div class="col col-33" style="text-align:right;margin-top:10px"><button menu-toggle="right" class="button button-icon ion-navicon customIconSound"></button></div>
+			</div>
+			
+			<ion-content style="background:url(img/background.jpg) center; background-size: 100% 100% !important;">
+				<div class="spacer" style="height:160px"></div>
+				<div class="w3-card-4 w3-white" style="height:270px">
+					<div class="row">
+						<button class="w3-button w3-block w3-padding-large w3-red w3-round-xxlarge" ng-click="scanBarcode()"><b style="font-size:20px"><i class="icon ion-search"></i>&nbspScan</b></button>
+					</div>
+					<div class="spacer" style="height:6px"></div>
+					<div class="row">
+						<div id="scan-result-header" style="font-size:18px;text-align:center;width:100%">Scan results will be shown here</div>
+					</div>
+					<div class="row" style="width:100%">
+						<div id="scanResult" style="max-height:300px;font-size:16px;width:100%"></div>
+					</div>
+				</div>
+				
+			</ion-content>
+			
+				<img src="img/p1.gif" style="width:70px;height:70px;position:fixed;bottom:15px;left:10px"/>
+				<img src="img/p2.gif" style="width:70px;height:70px;position:fixed;bottom:15px;left:90px"/>
+				<img src="img/p3.gif" style="width:70px;height:70px;position:fixed;bottom:15px;left:170px"/>
+				
+		</ion-nav-view>
+	</ion-side-menu-content>
+
+	<ion-side-menu side="right">
+		<ion-content>
+		
+			<div class = "row">
+				<div class="col col-center text-center" ><img src="img/icon.png"></div>
+			</div>
+		
+			<ion-list ng-controller="menuCtrl">
+				<ion-item menu-close menu-toggle style="background:transparent" ng-click="home()">
+					<i class="icon ion-home" style="font-size: 20px;color:#e51219"></i> &nbsp HOME
+				</ion-item>
+				<ion-item menu-close menu-toggle style=" background:transparent" ng-click="about()">
+					<i class="icon ion-ios-information" style="font-size: 20px;color:#e51219"></i> &nbsp ABOUT US
+				</ion-item>
+				<ion-item menu-close menu-toggle style=" background:transparent" ng-click="brand()">
+					<i class="icon ion-pricetags" style="font-size: 20px;color:#e51219"></i> &nbsp BRAND
+				</ion-item>
+			</ion-list>
+		</ion-content>
+	</ion-side-menu>
+</ion-side-menus>

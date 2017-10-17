@@ -1,0 +1,16 @@
+#aboutpage
+{
+    background-color:transparent;
+	color:white;
+    overflow-y: scroll;
+    max-width:100%;
+	height:280px;
+	font-size:20px;
+	font-family:Lucida Sans Unicode;
+	padding:8px;
+}
+
+button.customIconSound:before {
+    font-size: 45px !important;
+	color:white;
+}

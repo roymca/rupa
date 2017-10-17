@@ -1,0 +1,69 @@
+<ion-side-menus enable-menu-with-back-views="true">
+	
+	<ion-side-menu-content>
+		<ion-nav-view>
+		<!--	
+			<ion-nav-bar class="bar-clear">
+				<ion-nav-buttons side="right">
+					<button menu-toggle="right" class="button button-icon button-clear ion-navicon"></button>
+				</ion-nav-buttons>			
+			</ion-nav-bar>
+		-->
+
+			<div class="bar bar-header" style="background:none; font-weight:bold">
+				<div class="col col-33"></div>
+				<div class="col col-33"></div>
+				<div class="col col-33" style="text-align:right;margin-top:10px"><button menu-toggle="right" class="button button-icon ion-navicon customIconSound"></button></div>
+			</div>
+		
+			<ion-content style="background:url(img/background.jpg) center; background-size: 100% 100% !important;">
+				<div class="spacer" style="height:160px"></div>
+				<div class="w3-card-4" class="row" id="aboutpage" >
+				<p style="text-align:justify;">Rupa & Company Ltd. is one of the leading Knitwear Manufacturing Companies in India with an enviable 
+									portfolio comprising of popular brands like Frontline, Softline, Euro, Bumchums, Torrido, Thermocot, 
+									Footline and Jon, covering an entire range of knitted garments from Inner Wear to Casual Wear, Sleep Wear 
+									to Thermal Wear.<br>
+									RUPA brand was launched in 1968 in order to give shape to the vision of Mr P R Agarwala and his brothers, 
+									Mr G P Agarwala and Mr K B Agarwala, of establishing an indigenous knitwear brand that would cater to the 
+									daily inner wear needs of men, women and kids alike. The Company has come a long way from its humble beginnings 
+									in the bylanes of Kolkata (then Calcutta) to become a fashion-forward brand with a strong brand presence across 
+									the country. The Company is also moving rapidly to make its presence felt in the international arena, especially 
+									in GCC, Africa and Asia Pacific.<br>
+									RUPA is among the largest knitwear manufacturers in India with its manufacturing facilities situated in Bangalore, 
+									Tirupur, Kolkata and Ghaziabad. <br>
+									Headquartered in Kolkata, the Company has its sales offices located at Patna, Varanasi, Mumbai, Jaipur, Indore, Delhi, 
+									Ghaziabad, Kanpur, Bangalore, Tirupur, and Hyderabad. Rupa & Company Ltd. is also accredited of having one of the largest 
+									distribution networks across India with over 100,000 retailers and more than 1,000 dealers. RUPA endorses ISO 9001:2008 
+									Certification and is listed on NSE, and BSE. </p>
+				</div>
+				
+			</ion-content>
+			
+				<img src="img/p1.gif" style="width:70px;height:70px;position:fixed;bottom:15px;left:10px"/>
+				<img src="img/p2.gif" style="width:70px;height:70px;position:fixed;bottom:15px;left:90px"/>
+				<img src="img/p3.gif" style="width:70px;height:70px;position:fixed;bottom:15px;left:170px"/>
+				
+		</ion-nav-view>
+	</ion-side-menu-content>
+
+	<ion-side-menu side="right">
+		<ion-content>
+		
+			<div class = "row">
+				<div class="col col-center text-center" ><img src="img/icon.png"></div>
+			</div>
+		
+			<ion-list ng-controller="menuCtrl">
+				<ion-item menu-toggle menu-close style="background:transparent" ng-click="home()">
+					<i class="icon ion-home" style="font-size: 20px;color:#e51219"></i> &nbsp HOME
+				</ion-item>
+				<ion-item menu-toggle menu-close style=" background:transparent" ng-click="about()">
+					<i class="icon ion-ios-information" style="font-size: 20px;color:#e51219"></i> &nbsp ABOUT US
+				</ion-item>
+				<ion-item menu-toggle menu-close style=" background:transparent" ng-click="brand()">
+					<i class="icon ion-pricetags" style="font-size: 20px;color:#e51219"></i> &nbsp BRAND
+				</ion-item>
+			</ion-list>
+		</ion-content>
+	</ion-side-menu>
+</ion-side-menus>

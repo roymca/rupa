@@ -1,0 +1,72 @@
+<ion-side-menus enable-menu-with-back-views="true">
+	
+	<ion-side-menu-content>
+		<ion-nav-view>
+		<!--
+			<ion-nav-bar class="bar-clear">
+				<ion-nav-buttons side="right">
+					<button menu-toggle="right" class="button button-icon button-clear ion-navicon"></button>
+				</ion-nav-buttons>			
+			</ion-nav-bar>
+		-->
+
+			<div class="bar bar-header" style="background:none; font-weight:bold">
+				<div class="col col-33"></div>
+				<div class="col col-33"></div>
+				<div class="col col-33" style="text-align:right;margin-top:10px"><button menu-toggle="right" class="button button-icon ion-navicon customIconSound"></button></div>
+			</div>
+			
+			<ion-content style="background:url(img/background.jpg) center; background-size: 100% 100% !important;">
+				<div class="spacer" style="height:170px"></div>
+				<div class="row" style="width:100%">
+					<div class = "col"><div class="animated fadeInLeft"><img height="42px" width="95%" src="img/1.png"></div></div>
+					<div class = "col"><div class="animated fadeInRight"><img height="42px" width="95%" align="right" src="img/2.png"></div></div>
+				</div>
+				<div class="row" style="width:100%">
+					<div class = "col"><div class="animated fadeInLeft"><img height="42px" width="95%" src="img/3.png"></div></div>
+					<div class = "col"><div class="animated fadeInRight"><img height="42px" width="95%" align="right" src="img/4.png"></div></div>
+				</div>
+				<div class="row" style="width:100%">
+					<div class = "col"><div class="animated fadeInLeft"><img height="42px" width="95%" src="img/5.png"></div></div>
+					<div class = "col"><div class="animated fadeInRight"><img height="42px" width="95%" align="right" src="img/6.png"></div></div>
+				</div>
+				<div class="row" style="width:100%">
+					<div class = "col"><div class="animated fadeInLeft"><img height="42px" width="95%" src="img/7.png"></div></div>
+					<div class = "col"><div class="animated fadeInRight"><img height="42px" width="95%" align="right" src="img/8.png"></div></div>
+				</div>
+				<div class="row" style="width:100%">
+					<div class = "col"><div class="animated fadeInLeft"><img height="42px" width="95%" src="img/9.png"></div></div>
+					<div class = "col"><div class="animated fadeInRight"><img height="42px" width="95%" align="right" src="img/10.png"></div></div>
+				</div>
+			</ion-content>
+			
+			<div style="position: bottom; bottom: 0px">	
+				<img src="img/p1.gif" style="width:70px;height:70px;position:fixed;bottom:15px;left:10px"/>
+				<img src="img/p2.gif" style="width:70px;height:70px;position:fixed;bottom:15px;left:90px"/>
+				<img src="img/p3.gif" style="width:70px;height:70px;position:fixed;bottom:15px;left:170px"/>
+			</div>
+				
+		</ion-nav-view>
+	</ion-side-menu-content>
+
+	<ion-side-menu side="right">
+		<ion-content>
+		
+			<div class = "row">
+				<div class="col col-center text-center" ><img src="img/icon.png"></div>
+			</div>
+		
+			<ion-list ng-controller="menuCtrl">
+				<ion-item menu-toggle menu-close style="background:transparent" ng-click="home()">
+					<i class="icon ion-home" style="font-size: 20px;color:#e51219"></i> &nbsp HOME
+				</ion-item>
+				<ion-item menu-toggle menu-close style=" background:transparent" ng-click="about()">
+					<i class="icon ion-ios-information" style="font-size: 20px;color:#e51219"></i> &nbsp ABOUT US
+				</ion-item>
+				<ion-item menu-toggle menu-close style=" background:transparent" ng-click="brand()">
+					<i class="icon ion-pricetags" style="font-size: 20px;color:#e51219"></i> &nbsp BRAND
+				</ion-item>
+			</ion-list>
+		</ion-content>
+	</ion-side-menu>
+</ion-side-menus>
